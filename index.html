@@ -41,7 +41,6 @@
         width: 100vw;
         padding-right: 0;
         padding-left: 0;
-        border: solid purple 5px;
         
     }
 
@@ -71,7 +70,6 @@
         box-sizing: border-box;
         height: 15%;
         width: 100%;
-        border: solid purple 5px;
         border-radius: 10px;
         background-color: rgb(35, 35, 124);
         padding: 10px;
@@ -82,7 +80,6 @@
         box-sizing: border-box;
         height: 15%;
         width: 100%;
-        border: solid purple 5px;
         border-radius: 10px;
         background-color: rgb(35, 35, 124);
         padding: 10px;
@@ -93,7 +90,6 @@
         box-sizing: border-box;
         height: 55%;
         width: 100%;
-        border: solid purple 5px;
         border-radius: 10px;
         background-color: rgb(35, 35, 124);
         padding: 10px;
@@ -104,25 +100,54 @@
         box-sizing: border-box;
         height: 15%;
         width: 100%;
-        border: solid purple 5px;
         border-radius: 10px;
         background-color: rgb(35, 35, 124);
         padding: 10px;
     }
 
-    .profile{
-        
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (min-width: 577px){
+        .content{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "a b"
+            "c b" 
+            "d b" ;
+        }
+
+        .name{
+            grid-area: a;
+            height: 100%;
+        }
+
+        .user-title{
+            grid-area: c;
+            height: 100%;
+        }
+
+        .logout{
+            grid-area: d;
+            height: 100%;
+        }
+
+        .bio{
+            grid-area: b;
+            height: 100%;
+        }
     }
-
-
-
-
-
-
-
-
-
-
 
 </style>
 
@@ -141,20 +166,20 @@
             profile
         </div>
     </div>
-        <div class="content">
-            <div class="name">
-                name 
-            </div>
-            <div class="user-title">
-                user title
-            </div>
-            <div class="bio">
-                bio
-            </div>
-            <div class="logout">
-                logout 
-            </div>
-        </div>
+            <div class="content">
+                <div class="name">
+                    name 
+                </div>
+                <div class="user-title">
+                    user title
+                </div>
+                <div class="bio">
+                    bio
+                </div>
+                <div class="logout">
+                    logout 
+                </div>
+            </div> 
         <br>
         <br>
         <br>
