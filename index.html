@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="icons.css">
 </head>
 <style>
     @font-face {
@@ -25,9 +26,10 @@
         width: 100%;
         height: 100%;
         align-items: center;
-        padding: 10%;
         padding-top: 0;
         padding-bottom: 0;
+        padding-left: 10%;
+        padding-right: 10%;
         color: white;
         background-color: rgb(11, 11, 91);
         gap: 7px;
@@ -55,28 +57,37 @@
 
     .menu{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         height: 10vh;
         width: 100vw;
         background-color: rgb(35, 35, 124);
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        align-self: center;
-        
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        align-items: center;
+        gap: 60px;
+        padding-left: 10%;
+        padding-top: 10px;
+
     }
 
     .name{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         box-sizing: border-box;
         height: 15%;
         width: 100%;
         border-radius: 10px;
         background-color: rgb(35, 35, 124);
-        padding: 10px;
+        padding: 20px;
     }
 
     .user-title{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
         box-sizing: border-box;
         height: 15%;
         width: 100%;
@@ -88,6 +99,7 @@
     .bio{
         display: block;
         box-sizing: border-box;
+        align-items: center;
         height: 55%;
         width: 100%;
         border-radius: 10px;
@@ -96,7 +108,10 @@
     }
 
     .logout{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         box-sizing: border-box;
         height: 15%;
         width: 100%;
@@ -105,6 +120,12 @@
         padding: 10px;
     }
 
+    
+    .none{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
 
 
@@ -147,6 +168,10 @@
             grid-area: b;
             height: 100%;
         }
+
+        .menu{
+            align-self: flex-start;
+        }
     }
 
 </style>
@@ -168,16 +193,23 @@
     </div>
             <div class="content">
                 <div class="name">
-                    name 
+                    <span>Name</span>
+                    <span>Umair</span>
                 </div>
                 <div class="user-title">
-                    user title
+                    <span>User-Title</span>
+                        <span class="none">
+                            None
+                            <div class="icon-1"></div>
+                        </span>
                 </div>
                 <div class="bio">
-                    bio
+                    <div>Bio</div>
+                    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint eveniet nesciunt facilis provident aliquid explicabo, quas magnam. At quam dolorum quibusdam ut reiciendis temporibus quasi ad cupiditate quae, deleniti veritatis.</div>
                 </div>
                 <div class="logout">
-                    logout 
+                    <span>Logout</span>
+                    <span class="icon-2"></span>
                 </div>
             </div> 
         <br>
@@ -186,7 +218,11 @@
         <br>
         <br>
         <div class="menu">
-
+            <div class="icon-3"></div>
+            <div class="icon-4"></div>
+            <div class="icon-5"></div>
+            <div class="icon-6"></div>
+            <div class="icon-7"></div>
         </div>
 
 
