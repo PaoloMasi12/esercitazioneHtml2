@@ -15,19 +15,18 @@
 
     html, body{
         font-family: poppins;
-        height: 100vh;
-        width: 100vw;
+        background-color: rgb(11, 11, 91);
     }
 
     .wrapper{
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
         height: 100%;
         align-items: center;
         padding-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 5%;
         padding-left: 5%;
         padding-right: 5%;
         color: white;
@@ -39,10 +38,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 40vh;
-        width: 100vw;
-        padding-right: 0;
-        padding-left: 0;
+        height: 30%;
+        width: 100%;
         
     }
 
@@ -55,51 +52,26 @@
         
     }
 
-/*   .menu{
+   .menu{
         display: flex;
         flex-direction: row;
-        height: 10vh;
+        height: 10%;
         width: 100%;
         background-color: rgb(35, 35, 124);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         align-items: center;
-        gap: 60px;
-        padding-left: 10%;
         padding-top: 10px;
-        padding: 0 auto;
-
-    }    */
-
-
-    .menu{
-        box-sizing: border-box;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-rows: auto;
-        background-color: rgb(35, 35, 124);
-        width: 100vw;
-        height: 10%;
-        padding: 10px;
-        border: 0;
-    }
-
-
-
-    .name{
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        box-sizing: border-box;
-        height: 15%;
-        width: 100%;
-        border-radius: 10px;
-        background-color: rgb(35, 35, 124);
-        padding: 20px;
-    }
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }    
 
-    .user-title{
+    .utent{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -116,20 +88,7 @@
         display: block;
         box-sizing: border-box;
         align-items: center;
-        height: 55%;
-        width: 100%;
-        border-radius: 10px;
-        background-color: rgb(35, 35, 124);
-        padding: 20px;
-    }
-
-    .logout{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        box-sizing: border-box;
-        height: 15%;
+        height: auto;
         width: 100%;
         border-radius: 10px;
         background-color: rgb(35, 35, 124);
@@ -157,16 +116,49 @@
         width: 100%;
         height: 100%;
         border-radius: 50%;
+        border: solid aqua 5px;
     }
 
     .profile{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        height: auto;
+        align-items: center;
     }
 
     .pf{
         display: block;
         align-self: center;
+
+    }
+
+    .setting{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+    }
+
+    .player-stats{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50px;
+        justify-content: space-around;
+    }
+
+    [class*="stats-"]{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .stats-2{
+        border-left: solid white 2px;
+        border-right: solid white 2px;
     }
 
 
@@ -216,29 +208,43 @@
 </style>
 
 <body>
+    <div class="settings"> 
+        
+    </div>
     <div class="wrapper">
     <div class="header">
-        <div class="settings"> 
-            settings
-        </div>
-
-
-    
         <div class="profile">
             <div class="pf">Profile</div>
             <div class="pfp">
                 <img src="profile.png" title="Profile Picture" class="img">
+            </div>
+            <br>
+            <div>Umair Ijaz</div>
+            <br>
+            <div class="player-stats">
+                <span class="stats-1">
+                    <div>12</div>
+                    <div>Rank</div>
+                </span>
+                <span class="stats-2">
+                    <div>5</div>
+                    <div>Win</div>
+                </span>
+                <span class="stats-3">
+                    <div>2</div>
+                    <div>Lose</div>
+                </span>
             </div>
         </div>
     </div>
             <br>
             <br>
             <div class="content">
-                <div class="name">
+                <div class="utent">
                     <span>Name</span>
                     <span>Umair</span>
                 </div>
-                <div class="user-title">
+                <div class="utent">
                     <span>User-Title</span>
                         <span class="none">
                             None
@@ -249,9 +255,10 @@
                     <div>Bio</div>
                     <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint eveniet nesciunt facilis provident aliquid explicabo, quas magnam. At quam dolorum quibusdam ut reiciendis temporibus quasi ad cupiditate quae, deleniti veritatis.</div>
                 </div>
-                <div class="logout">
+                <div class="utent">
                     <span>Logout</span>
                     <img src="Icons/icon-logout.svg"  class="icon-2">
+                    
                 </div>
             </div> 
         <br>
@@ -259,7 +266,7 @@
         <br>
         <br>
         <br>
-        
+        </div>
             <div class="menu">
                 <img src="Icons/icon-square.svg"    class="icon-3">
                 <img src="Icons/icon-swords.svg"    class="icon-4">
@@ -267,7 +274,7 @@
                 <img src="Icons/icon-stats.svg"     class="icon-6">
                 <img src="Icons/icon-avatar.svg"    class="icon-7">
             </div>
-        </div>
+        
 
 
     
