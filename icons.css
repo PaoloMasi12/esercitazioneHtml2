@@ -12,52 +12,83 @@
 }
 
 
-.icon-1{
+.icon-arrow{
     filter: brightness(0) saturate(100%) invert(92%) sepia(83%) 
     saturate(2512%) hue-rotate(103deg) brightness(101%) contrast(108%);
 }
 
-.icon-2{
+.icon-logout{
     filter: brightness(0) saturate(100%) invert(100%) sepia(2%) 
     saturate(0%) hue-rotate(154deg) brightness(103%) contrast(104%);
 
 }
 
 
-.icon-3{
+.icon-square{
     filter: brightness(0) saturate(100%) invert(92%) sepia(83%) 
     saturate(2512%) hue-rotate(103deg) brightness(101%) contrast(108%);
     height: 50px;
     width: 50px;
 }
 
-.icon-4{
+.icon-swords{
     filter: brightness(0) saturate(100%) invert(92%) sepia(83%) 
     saturate(2512%) hue-rotate(103deg) brightness(101%) contrast(108%);
     height: 50px;
     width: 50px;
 }
 
-.icon-5{
+.icon-trophy{
     filter: brightness(0) saturate(100%) invert(92%) sepia(83%) 
     saturate(2512%) hue-rotate(103deg) brightness(101%) contrast(108%);
     height: 50px;
     width: 50px;
 }
 
-.icon-6{
+.icon-stats{
     filter: brightness(0) saturate(100%) invert(92%) sepia(83%) 
     saturate(2512%) hue-rotate(103deg) brightness(101%) contrast(108%);
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
-.icon-7{
+.icon-avatar{
     filter: brightness(0) saturate(100%) invert(92%) sepia(83%) 
     saturate(2512%) hue-rotate(103deg) brightness(101%) contrast(108%);
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
+
+.icon-back-arrow{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) 
+    saturate(0%) hue-rotate(154deg) brightness(103%) contrast(104%);
+    height: 30px;
+    width: 30px;
+}
+
+.icon-settings{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) 
+    saturate(0%) hue-rotate(154deg) brightness(103%) contrast(104%);
+    height: 30px;
+    width: 30px;
+}
+
+.icon-disc{
+    filter: brightness(0) saturate(100%) invert(88%) sepia(12%) 
+    saturate(790%) hue-rotate(112deg) brightness(98%) contrast(94%);
+    height: 30px;
+    width: 30px;
+}
+
+.icon-switch{
+    filter: brightness(0) saturate(100%) invert(88%) sepia(12%) 
+    saturate(790%) hue-rotate(112deg) brightness(98%) contrast(94%);
+    height: 30px;
+    width: 30px;
+}
+
+
+
 
 
 
