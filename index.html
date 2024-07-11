@@ -200,8 +200,8 @@
         display: block;
         box-sizing: border-box;
         width: 100%;
-        height: 550px;
-        background-image: url(file\ \(1\).png);
+        height: auto;
+        background-image: url();
         background-size: cover;
         background-repeat: no-repeat;
         display: none;
@@ -222,7 +222,7 @@
 
 
 
-    @media screen and (min-width: 577px){
+    @media screen and (min-width: 670px){
         .content{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -262,7 +262,7 @@
         }
 
         .background-image{
-            display: flex;
+            display: block;
         }
 
         .icon-arrow{
@@ -275,6 +275,39 @@
             height: 40px;
         }
     }
+
+    @media screen and (min-width: 670px) and (max-width: 771px) {
+        .background-image{
+            background-image: url(Img/RainbowSixSiege-600.jpg);
+            height: 449px;
+        }
+    }
+
+    @media screen and (min-width: 772px) and (max-width: 872px) {
+        .background-image{
+            background-image: url(Img/RainbowSixSiege-800.jpg);
+            height: 449px;
+        }
+
+        }   
+    
+
+    @media screen and (min-width: 873px) and (max-width: 972px) {
+        .background-image{
+            background-image: url(Img/RainbowSixSiege-900.jpg);
+            height: 449px;
+        }
+    }
+
+    @media screen and (min-width: 973px){
+        .background-image{
+            background-image: url(Img/RainbowSixSiege.jpg);
+            height: 770px;
+        }
+    }
+
+
+
 
 
 
@@ -298,7 +331,7 @@
         <span class="settings-icons">
             <img src="Icons/icon-switch.svg"            class="icon-switch">
                 <img src="Icons/icon-settings.svg"      class="icon-settings">
-                <img src="profile.png" title="Profile Picture" class="img imgset">
+                <img src="Img/profile.png" title="Profile Picture" class="img imgset">
         </span>
 
     </div>
@@ -310,7 +343,7 @@
         <div class="profile">
             <div class="pf">Profile</div>
             <div class="pfp">
-                <img src="profile.png" title="Profile Picture" class="img">
+                <img src="Img/profile.png" title="Profile Picture" class="img">
             </div>
             <br>
             <div>Umair Ijaz</div>
